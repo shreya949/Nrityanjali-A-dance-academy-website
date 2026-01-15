@@ -11,13 +11,13 @@ A responsive and elegant dance academy website built using HTML (Pug), CSS, and 
 ![Home](assets/home.png)
 
 ### About Us 
-![Contact](assets/contact.png)
+![About Us](assets/about.png)
 
 ### Classes
-![Helpline](assets/helpline.png)
+![Classes](assets/classes.png)
 
 ### Dance Forms
-![Home](assets/home.png)
+![Dance Forms](assets/dance.png)
 
 ### Contact Us 
 ![Contact](assets/contact.png)
