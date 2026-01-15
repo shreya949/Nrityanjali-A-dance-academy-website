@@ -1,0 +1,25 @@
+extends base.pug
+
+block script
+    script(src="/static/script.js")
+
+block style
+    link(rel="stylesheet", href="/static/style.css")
+    link(rel="stylesheet", href="/static/phone.css")
+
+block content
+    section#loginSection
+        h1 Login
+        #login-box
+            form(action='/login', method='POST')
+                .form-group
+                    label(for='email') Email:
+                    input#email(type='email', name='email', placeholder='Enter your email')
+                .form-group
+                    label(for='password') Password:
+                    input#password(type='password', name='password', placeholder='Enter your password')
+                .form-group.center-btn
+                    button.btn(type='submit') Login
+                p.center-text
+                    | Don't have an account? 
+                    a(href="/signup") Sign Up

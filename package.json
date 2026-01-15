@@ -1,0 +1,19 @@
+{
+  "name": "dance-website",
+  "version": "1.0.0",
+  "description": "This is a website for popular customers",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Shreya behen",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "mongoose": "^8.19.1",
+    "pug": "^3.0.3"
+  }
+}

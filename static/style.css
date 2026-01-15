@@ -1,0 +1,874 @@
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Baloo+2:wght@400..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=SUSE+Mono:ital,wght@0,100..800;1,100..800&family=Shadows+Into+Light&family=Shojumaru&display=swap');
+
+/* style for all  */
+* {
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+/* navigation panel */
+#logo {
+    display: flex;
+    color: white;
+    align-items: center;
+    margin: 0px 14px;
+}
+#logo img {
+    height: 47px;
+}
+#logo img:hover {
+    transform: scale(2);
+}
+.bg{
+    background:  no-repeat url('fullbg.jpg');
+    background-size: 100% 1700px;
+}
+#navbar {
+    background-color: rgb(179, 87, 0);
+    padding: 12px 13px;
+}
+#navbar ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+}
+#navbar ul li {
+    list-style: none;
+}
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 13px 20px;
+    font-size: 1.5rem;
+}
+#navbar li a:hover {
+    color: rgb(206, 203, 203);
+}
+#navbar ul li a[href="/login"],
+#navbar ul li a[href="/signup"] {
+    background-color: #d43f8d;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+#navbar ul li a[href="/login"]:hover,
+#navbar ul li a[href="/signup"]:hover {
+    background-color: #b83274;
+}
+
+
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    margin: 0;
+}
+
+#navbar ul li {
+    list-style: none;
+}
+
+/* Push nav-right to far right */
+.nav-right {
+    margin-left: auto;
+    /* pushes these items to the right */
+    display: flex;
+    gap: 15px;
+}
+
+/* Style login/signup buttons */
+.nav-right li a {
+    background-color: #d43f8d;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.nav-right li a:hover {
+    background-color: #b83274;
+}
+
+/* Main menu links */
+#navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 13px 20px;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a:hover {
+    color: rgb(206, 203, 203);
+}
+
+
+
+
+
+
+
+
+/* --- Login & Signup Section --- */
+#loginSection,
+#signupSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 80vh;
+    background: linear-gradient(135deg, #fff5f5, #ffe6e6);
+}
+
+#login-box,
+#signup-box {
+    background-color: #fff0f6;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#login-box input,
+#signup-box input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 9px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+#login-box input:focus,
+#signup-box input:focus {
+    border-color: #a83279;
+    box-shadow: 0 0 5px rgba(168, 50, 121, 0.3);
+}
+
+h1 {
+    color: #a83279;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.center-text {
+    text-align: center;
+    font-size: 0.95rem;
+    margin-top: 10px;
+}
+
+.center-text a {
+    color: #d43f8d;
+    text-decoration: none;
+}
+
+.center-text a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* body of page  */
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+body h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+    color: rgb(184, 77, 0);
+    height: 92px;
+}
+body h1.h {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 1000;
+    color: rgb(119, 46, 0);
+    height: 92px;
+}
+body h1.hh {
+    /* background-color: rgb(184, 77, 0); */
+    /* margin: 10px 600px; */
+    backdrop-filter: blur(10px);
+}
+
+
+
+
+
+
+
+
+
+
+/* home page  */
+#introSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(164, 71, 0);
+    height: auto;
+    /* allow content to grow naturally */
+    font-size: 50px;
+    margin: 36px 16px;
+    text-align: center;
+}
+
+#introSection div.wc {
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#introSection p {
+
+            font-size: 25px;
+            font-weight: 400;
+            color: #4a1f00;
+            /* deeper warm brown for better readability */
+            line-height: 1.8;
+            background: #9b4101;
+            padding: 25px 40px;
+            border-radius: 20px;
+            width: 85%;
+            max-width: 1000px;
+            margin: 30px auto;
+            box-shadow: 0 6px 20px rgba(85, 40, 0, 0.25);
+            backdrop-filter: blur(4px);
+            color: rgb(255 240 127);
+            /* soft blend with background */
+}
+
+
+
+
+
+
+
+
+
+
+/* about us page  */
+#aboutSection {
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    color: rgb(119, 46, 0);
+}
+#aboutSection h1 {
+    text-align: center;
+    padding-top: 12px;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(119, 46, 0);
+    margin: 31px;
+}
+#aboutSection div.card ul li {
+    text-align: center;
+    padding-top: 0px;
+    font-size: 28px;
+    font-weight: 300;
+    color:burlywood;
+    margin: 21px 109px;
+    height: 30px;
+    font-weight: 500;
+    list-style-type: none;
+}
+.card {
+    flex: 1 1 300px;
+    max-width: 1000px;
+    margin: 20px 50px;
+    padding: 20px 40px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    height: auto;
+    background-color: rgb(255 240 127);
+
+}
+#aboutSection h2{
+    padding: 0px 56px;
+        margin: 0px 0px;
+        font-size: 40px;
+        font-weight: 600;
+        background: #4a1f00;
+        color: rgb(255 240 127);
+}
+#aboutSection h3{
+        font-size: 20px;
+        font-weight: 600;
+}
+#aboutSection p{
+        font-size: 20px;
+        font-weight: 500;
+}
+/* .card {
+    display: inline-block;
+    border: 2px solid rgb(119, 46, 0);
+    border-radius: 30px;
+    width: 44%;
+    margin: 0px 44px;
+    height: 246px;
+        background: #8d3b00;
+            color: burlywood;
+}
+.card h2 {
+    text-align: center;
+    margin: 12px;
+    font-weight: 700;
+    font-size: 31px;
+} */
+
+
+
+
+
+
+
+
+
+
+/* classes page  */
+#classesSection {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px;
+    color: rgb(119, 46, 0);
+    backdrop-filter: blur(10px);
+    font-weight: 700;
+}
+#classesSection h1 {
+    text-align: center;
+    padding-top: 12px;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(85, 33, 0);
+    margin: 31px;
+}
+#classesSection .cardi {
+    flex: 1 1 300px;
+    max-width: 400px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    height: auto;
+    background-color: rgb(255 240 127);
+    
+}
+#classesSection div.cardi h3 {
+    text-align: center;
+    margin: 12px;
+    font-weight: 700;
+}
+.card-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-img {
+    height: 110px;
+    padding: 0px 14px;
+}
+.card-img img {
+    height: inherit;
+}
+.card-img img:hover {
+    transform: scale(2);
+}
+.card-img img.g {
+    text-align: center;
+    padding: 18px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+/* Dance forms page  */
+#sponserSection {
+    height: 400px;
+    color: rgb(255, 255, 255);
+    position: relative;
+        /* background: url('../static/fullbg.jpg') center/cover no-repeat; */
+        padding: 3px 70px;
+        height: 844px;
+        color: rgb(179, 87, 0);
+}
+#sponserSection h1 {
+    text-align: center;
+    padding-top: 0px;
+    font-size: 50px;
+    font-weight: 900;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 0px;
+    color: rgb(85, 33, 0);
+    font-weight: 700;
+}
+/* Apply blur overlay */
+#sponserSection::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    z-index: 0;
+}
+/* Optional: Section heading */
+tr.schedule-day td {
+    width: 300px;
+    height: 100px;
+    text-align: center;
+}
+td.schedule-title {
+    width: 300px;
+    height: 50px;
+    text-align: center;
+}
+/* Table container above blur */
+.class-schedule-table {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 18px;
+    background: rgba(255, 236, 141, 0.641);
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+/* Table cells evenly distributed */
+.class-schedule-table td,
+.class-schedule-table th {
+    border: 1px solid rgb(179, 87, 0);
+    padding: 18px;
+    width: calc(100% / 7);
+    /* evenly distribute across 7 days */
+    color: rgb(80, 30, 0);
+}
+/* Header Row (Days of Week) */
+.schedule-day td {
+    background: rgb(179, 87, 0);
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+/* Class title styling */
+.schedule-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: rgb(90, 35, 0);
+}
+/* Small time under class title */
+.schedule-time {
+    display: block;
+    font-size: 20px;
+    color: rgb(119, 46, 0);
+    opacity: 0.8;
+    font-weight: 600;
+}
+/* Hover effect */
+.class-schedule-table td.schedule-title:hover {
+    background: rgb(157, 70, 16);
+    transform: scale(1.02);
+    transition: all 0.3s ease;
+    cursor: pointer;
+    color: rgb(255, 216, 98);
+}
+.schedule-time:hover {
+    color: rgb(255, 216, 98);
+}
+
+
+
+
+
+
+
+
+
+
+/* contact us page  */
+#contactSection {
+    height: 800px;
+    /* background-color: blue; */
+}
+#contactSection h1{
+    color: rgb(255, 225, 133);;
+}
+#contactSection::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 900px;
+    z-index: -1;
+    /* opacity: 0.4; */
+    background: url('../static/Step.jpeg') no-repeat center center;
+    background-size: cover;
+}
+#contact-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    padding: 10px;
+    /* instead of 2px 500px */
+    margin: 20px auto;
+    /* center the box horizontally */
+    box-sizing: border-box;
+}
+
+#contact-box form {
+    width: 100%;
+    /* use full container width */
+    max-width: 450px;
+    /* limit max width for desktop */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* spacing between inputs */
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background-color: rgb(255, 245, 215);
+    color: rgb(85, 33, 0);
+    box-sizing: border-box;
+    /* ensure proper width */
+}
+
+#contact-box input::placeholder {
+    color: rgb(85, 33, 0);
+    opacity: 1;
+}
+
+#contact-box label {
+    font-size: 1.2rem;
+    font-family: "Baloo 2", sans-serif;
+    color: rgb(255, 209, 71);
+}
+
+.center-btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.btn {
+    background-color: #d43f8d;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #b83274;
+}
+
+
+
+
+
+
+
+
+
+footer page 
+footer.center {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 25px;
+    position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #552100;
+        color: white;
+        text-align: center;
+        padding: 15px 0;
+        font-family: "Shadows Into Light", cursive;
+        z-index: 100;
+}
+
+#navbar ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-right {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.hello-text {
+    color: white;
+    font-size: 1.2rem;
+    list-style: none;
+} 
+
+#qodef-page-footer {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+    display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+user agent stylesheet footer {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+body[class*=leroux-core] {
+    --qwfw-heading-color: var(--qode-main-color);
+    --qwfw-main-color: var(--qode-main-color);
+}
+
+.elementor-kit-8 {
+    --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #61CE70;
+    --e-global-color-f3a9c5e: #0D519B;
+    --e-global-color-784893e: #83B83C;
+    --e-global-typography-primary-font-family: "Roboto";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Roboto Slab";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-text-font-family: "Roboto";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-accent-font-family: "Roboto";
+    --e-global-typography-accent-font-weight: 500;
+}
+
+body {
+    font-family: Heebo, sans-serif;
+    font-size: 15px;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: #263037;
+    background-color: #fff;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    --sr-7-css-loaded: 1;
+}
+
+:root {
+    --wp--preset--aspect-ratio--square: 1;
+    --wp--preset--aspect-ratio--4-3: 4 / 3;
+    --wp--preset--aspect-ratio--3-4: 3 / 4;
+    --wp--preset--aspect-ratio--3-2: 3 / 2;
+    --wp--preset--aspect-ratio--2-3: 2 / 3;
+    --wp--preset--aspect-ratio--16-9: 16 / 9;
+    --wp--preset--aspect-ratio--9-16: 9 / 16;
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    --wp--preset--color--white: #ffffff;
+    --wp--preset--color--pale-pink: #f78da7;
+    --wp--preset--color--vivid-red: #cf2e2e;
+    --wp--preset--color--luminous-vivid-orange: #ff6900;
+    --wp--preset--color--luminous-vivid-amber: #fcb900;
+    --wp--preset--color--light-green-cyan: #7bdcb5;
+    --wp--preset--color--vivid-green-cyan: #00d084;
+    --wp--preset--color--pale-cyan-blue: #8ed1fc;
+    --wp--preset--color--vivid-cyan-blue: #0693e3;
+    --wp--preset--color--vivid-purple: #9b51e0;
+    --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, rgb(155, 81, 224) 100%);
+    --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, rgb(122, 220, 180) 0%, rgb(0, 208, 130) 100%);
+    --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
+    --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, rgb(207, 46, 46) 100%);
+    --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, rgb(238, 238, 238) 0%, rgb(169, 184, 195) 100%);
+    --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, rgb(74, 234, 220) 0%, rgb(151, 120, 209) 20%, rgb(207, 42, 186) 40%, rgb(238, 44, 130) 60%, rgb(251, 105, 98) 80%, rgb(254, 248, 76) 100%);
+    --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, rgb(255, 206, 236) 0%, rgb(152, 150, 240) 100%);
+    --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, rgb(254, 205, 165) 0%, rgb(254, 45, 45) 50%, rgb(107, 0, 62) 100%);
+    --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, rgb(255, 203, 112) 0%, rgb(199, 81, 192) 50%, rgb(65, 88, 208) 100%);
+    --wp--preset--gradient--pale-ocean: linear-gradient(135deg, rgb(255, 245, 203) 0%, rgb(182, 227, 212) 50%, rgb(51, 167, 181) 100%);
+    --wp--preset--gradient--electric-grass: linear-gradient(135deg, rgb(202, 248, 128) 0%, rgb(113, 206, 126) 100%);
+    --wp--preset--gradient--midnight: linear-gradient(135deg, rgb(2, 3, 129) 0%, rgb(40, 116, 252) 100%);
+    --wp--preset--font-size--small: 13px;
+    --wp--preset--font-size--medium: 20px;
+    --wp--preset--font-size--large: 36px;
+    --wp--preset--font-size--x-large: 42px;
+    --wp--preset--spacing--20: 0.44rem;
+    --wp--preset--spacing--30: 0.67rem;
+    --wp--preset--spacing--40: 1rem;
+    --wp--preset--spacing--50: 1.5rem;
+    --wp--preset--spacing--60: 2.25rem;
+    --wp--preset--spacing--70: 3.38rem;
+    --wp--preset--spacing--80: 5.06rem;
+    --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, .2);
+    --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, .4);
+    --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, .2);
+    --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
+    --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
+}
+
+:root {
+    --page-title-display: block;
+}
+
+:root {
+    --fa-style-family-classic: "Font Awesome 6 Free";
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+
+:root {
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+}
+
+:root {
+    --fa-style-family-brands: "Font Awesome 6 Brands";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
+
+:root {
+    --qode-main-color: #223035;
+    --qode-header-light-color: #fff;
+    --qode-header-light-hover-color: #223035;
+    --qode-header-dark-color: #000;
+    --qode-header-dark-hover-color: #223035;
+}
+
+:root {
+    --swiper-navigation-size: 44px;
+}
+
+:root {
+    --swiper-theme-color: #007aff;
+}
+
+:root {
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+    --fa-font-regular: normal 400 1em / 1 "Font Awesome 6 Free";
+    --fa-font-light: normal 300 1em / 1 "Font Awesome 6 Pro";
+    --fa-font-thin: normal 100 1em / 1 "Font Awesome 6 Pro";
+    --fa-font-duotone: normal 900 1em / 1 "Font Awesome 6 Duotone";
+    --fa-font-duotone-regular: normal 400 1em / 1 "Font Awesome 6 Duotone";
+    --fa-font-duotone-light: normal 300 1em / 1 "Font Awesome 6 Duotone";
+    --fa-font-duotone-thin: normal 100 1em / 1 "Font Awesome 6 Duotone";
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+    --fa-font-sharp-solid: normal 900 1em / 1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-regular: normal 400 1em / 1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-light: normal 300 1em / 1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-thin: normal 100 1em / 1 "Font Awesome 6 Sharp";
+    --fa-font-sharp-duotone-solid: normal 900 1em / 1 "Font Awesome 6 Sharp Duotone";
+    --fa-font-sharp-duotone-regular: normal 400 1em / 1 "Font Awesome 6 Sharp Duotone";
+    --fa-font-sharp-duotone-light: normal 300 1em / 1 "Font Awesome 6 Sharp Duotone";
+    --fa-font-sharp-duotone-thin: normal 100 1em / 1 "Font Awesome 6 Sharp Duotone";
+}
+
+:root {
+    --fa-font-solid: normal 900 1em / 1 "Font Awesome 6 Free";
+}
+
+:root {
+    --fa-font-brands: normal 400 1em / 1 "Font Awesome 6 Brands";
+}
+
+:root {
+    --animate-duration: 1s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+}
+
+::selection {
+    color: #fff;
+    background: var(--qode-main-color);
+}
+
+::selection {
+    color: #fff;
+    background: var(--qode-main-color);
+}
+
+::selection {
+    color: #fff;
+    background: var(--qode-main-color);
+}
+
+::selection {
+    color: #fff;
+    background: var(--qode-main-color);
+}

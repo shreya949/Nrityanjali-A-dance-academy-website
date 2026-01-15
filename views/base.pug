@@ -1,0 +1,105 @@
+doctype html
+html
+    head
+        title= title
+        block script
+        block style
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    body.bg
+        nav#navbar
+            ul
+                div#logo
+                    img(src="/static/logo.jpg")
+                li: a(href="/") Home
+                li: a(href="/about") About Us
+                li: a(href="/sponser") Classes
+                li: a(href="/classes") Dance Forms
+                li: a(href="/contact") Contact Us
+
+                // ✅ Right Side Navigation Buttons
+                .nav-right
+                    if loggedUser
+                        li.hello-text Hello #{loggedUser} 👋
+                        li: a(href="/logout") Logout
+                    else
+                        li: a(href="/login") Login
+                        li: a(href="/signup") Sign Up
+
+        block content
+
+        footer#qodef-page-footer(role="contentinfo")
+            #qodef-page-footer-top-area(data-rocket-location-hash="bf9ca00a55d294b6897585e1ceffb8ad")
+                #qodef-page-footer-top-area-inner.qodef-content-full-width
+                    .qodef-grid.qodef-layout--columns.qodef-responsive--custom.qodef-col-num--2.qodef-predefined.qodef-col-num--680--1.qodef-col-num--480--1.qodef-gutter--normal.qodef-alignment--left
+                        .qodef-grid-inner
+                            .qodef-grid-item
+                            .qodef-grid-item
+                                #block-70.widget(data-area="qodef-footer-top-area-column-2" class="widget_block")
+                                    .wp-block-group.is-content-justification-left
+                                        .wp-block-group__inner-container.is-layout-constrained.wp-block-group-is-layout-constrained
+                                        .wp-block-columns.is-layout-flex.wp-block-columns-is-layout-flex
+                                            .wp-block-column.is-layout-flow.wp-block-column-is-layout-flow(style="flex-basis:100%")
+
+            #qodef-page-footer-bottom-area(data-rocket-location-hash="1b9d5ac1569532bfe9f4b8ab0dbcf57f")
+                #qodef-page-footer-bottom-area-inner.qodef-content-full-width
+                    .qodef-grid.qodef-layout--columns.qodef-responsive--custom.qodef-col-num--4.qodef-forty-sixty.qodef-col-num--1024--2.qodef-col-num--768--2.qodef-col-num--680--1.qodef-col-num--480--1.qodef-gutter--normal
+                        .qodef-grid-inner
+
+                            // Logo Section
+                            .qodef-grid-item
+                                #block-81.widget(data-area="qodef-footer-bottom-area-column-1" class="widget_block")
+                                    .wp-block-qi-blocks-single-image.qodef-block-container
+                                        .qi-block-single-image.qodef-block.qodef-m
+                                            .qodef-m-image
+                                                img(
+                                                    src="/static/logo.jpg"
+                                                    alt="Nrityanjali Logo"
+                                                    width="200"
+                                                )
+
+                            // Contact Section
+                            .qodef-grid-item
+                                h5.qodef-m-title Contact Us:
+                                div(style="margin-bottom: 12px")
+                                    a(href="mailto:info@nrityanjali.com" style="color: white") info@nrityanjali.com
+                                div
+                                    a(href="tel:+919999999999" style="color: white") +91 99999 99999
+
+                            // Address Section
+                            .qodef-grid-item
+                                h5.qodef-m-title Our Address:
+                                div(style="margin-bottom: 12px")
+                                    a(
+                                        href="https://maps.app.goo.gl/"
+                                        target="_blank"
+                                        style="color: white"
+                                    )
+                                        | Nrityanjali Dance Academy,
+                                        br
+                                        | Pune, Maharashtra, India - 411038
+
+                            // Social Icons Section
+                            .qodef-grid-item
+                                h5.qodef-m-title Follow Us:
+                                div.qodef-social-icons-group
+                                    a(target="_blank" href="https://www.facebook.com")
+                                        span.social_facebook_square
+                                    a(target="_blank" href="https://www.twitter.com")
+                                        span.fab.fa-twitter
+                                    a(target="_blank" href="https://www.instagram.com")
+                                        span.social_instagram_square
+                                    a(target="_blank" href="https://www.youtube.com")
+                                        span.social_youtube
+
+            #qodef-page-footer-copyright-area
+                #qodef-page-footer-copyright-area-inner.qodef-content-full-width
+                    .qodef-grid.qodef-layout--columns.qodef-responsive--custom.qodef-col-num--4
+                        .qodef-grid-inner
+                            .qodef-grid-item
+                            .qodef-grid-item
+                            .qodef-grid-item
+                                a(href="/privacy-policy" style="font-family: dm sans; font-size: 13px") Privacy Policy
+                            .qodef-grid-item
+                                span(style="font-family: dm sans; font-size: 13px")
+                                    | © 2025 Nrityanjali Dance Academy. All rights reserved.

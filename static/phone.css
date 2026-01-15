@@ -1,0 +1,162 @@
+/* phone.css */
+
+/* ===== For Small Devices (max-width: 768px) ===== */
+@media (max-width: 768px) {
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo img {
+        width: 120px;
+        height: auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    /* About Page Cards */
+    #aboutSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+
+    .card-box {
+        padding: 10px;
+    }
+
+    /* Contact Page */
+    #contactSection {
+        padding: 30px 10px;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+
+    input,
+    textarea {
+        font-size: 0.9rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    /* Footer */
+    footer {
+        position: relative;
+        padding: 15px;
+        text-align: center;
+    }
+}
+
+/* ===== For Extra Small Devices (max-width: 480px) ===== */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* ===== Responsive adjustments ===== */
+@media (max-width: 768px) {
+    #contact-box {
+        padding: 10px;
+        margin: 20px 10px;
+    }
+
+    #contact-box form {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    input,
+    textarea {
+        font-size: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    #contact-box label {
+        font-size: 1rem;
+    }
+
+    input,
+    textarea {
+        font-size: 0.95rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #login-box,
+    #signup-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    input {
+        font-size: 0.9rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-right {
+        margin-left: 0;
+        margin-top: 10px;
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    #navbar ul li a,
+    .nav-right li a {
+        padding: 5px 10px;
+        font-size: 1rem;
+    }
+}

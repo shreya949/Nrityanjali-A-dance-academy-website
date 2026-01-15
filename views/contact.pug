@@ -1,0 +1,25 @@
+extends base.pug
+block script
+    script(src="/static/script.js")
+block style
+    link(rel="stylesheet", href="/static/style.css")
+    link(rel="stylesheet", href="/static/phone.css")
+block content
+    section#contactSection
+        h1 Contact Us
+        #contact-box
+            form(action='/contact', method='POST')
+                .form-group
+                    label(for='name') Name:
+                    input#name(type='text', name='name', placeholder='Enter your name')
+                .form-group
+                    label(for='email') Email:
+                    input#email(type='email', name='email', placeholder='Enter your email')
+                .form-group
+                    label(for='phone') Phone Number:
+                    input#phone(type='tel', name='phone', placeholder='Enter your phone number')
+                .form-group
+                    label(for='message') Message:
+                    textarea#message(name='message', cols='30', rows='10')
+                .form-group.center-btn
+                    button.btn(type='submit') Submit
